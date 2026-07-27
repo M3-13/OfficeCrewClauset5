@@ -1,4 +1,7 @@
+import os
 from collections.abc import Generator
+
+os.environ.setdefault("JWT_SECRET", "test-secret-key-for-pytest")
 
 import pytest
 from app.database import Base, get_db

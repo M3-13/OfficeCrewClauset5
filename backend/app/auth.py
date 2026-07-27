@@ -50,7 +50,8 @@ def verify_token(token: str) -> dict:
 
 
 def get_current_user(
-    token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)  # noqa: B008
+    token: str = Depends(oauth2_scheme),
+    db: Session = Depends(get_db),  # noqa: B008
 ) -> User:
     payload = verify_token(token)
     user_id: int | None = payload.get("sub")

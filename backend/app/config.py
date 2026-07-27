@@ -4,7 +4,7 @@ from dataclasses import dataclass
 
 @dataclass
 class Settings:
-    JWT_SECRET: str = os.environ.get("JWT_SECRET", "")
+    JWT_SECRET: str = os.environ["JWT_SECRET"]
     JWT_ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 15
     REFRESH_TOKEN_EXPIRE_DAYS: int = 7

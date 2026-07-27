@@ -4,7 +4,7 @@ import { useAuth } from "../contexts/AuthContext";
 export default function AuthGuard() {
   const { isAuthenticated } = useAuth();
   if (!isAuthenticated) {
-    return <Navigate to="/login" replace />;
+    return <Navigate to="/gallery" replace />;
   }
   return <Outlet />;
 }
