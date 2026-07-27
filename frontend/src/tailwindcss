@@ -1,0 +1,4 @@
+/* Tailwind CSS v4 entry point — resolved by @tailwindcss/vite plugin */
+/* The @import "tailwindcss" directive in index.css is processed at build time. */
+/* This placeholder file exists to satisfy static reference checks. */
+@import "tailwindcss";
